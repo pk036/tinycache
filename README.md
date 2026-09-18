@@ -4,7 +4,7 @@ A small in-memory LRU cache with optional per-key TTL expiration, built from
 scratch in Python (no `functools.lru_cache`, no `OrderedDict`) and exposed as
 a REST service with FastAPI.
 
-I built this to implement — not just use — the data structure behind most
+I built this to implement the data structure behind most
 production caching layers: a **doubly linked list + hashmap** for O(1)
 get/set/evict, plus lazy and active TTL expiration.
 
